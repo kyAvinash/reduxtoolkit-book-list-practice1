@@ -73,7 +73,6 @@ app.delete("/books/:id", async (req, res) => {
       book: deletedBook,
     });
   } catch (error) {
-    console.error(error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
